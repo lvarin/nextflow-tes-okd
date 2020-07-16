@@ -1,6 +1,8 @@
-FROM nextflow/nextflow:latest
+FROM nextflow/nextflow:20.05.0-edge
 
 COPY nf/ /tmp/
+
+COPY shubham-nextflow/nextflow /usr/local/bin/nextflow
 
 RUN chmod g+w -R /.nextflow && \
     apk update && \
