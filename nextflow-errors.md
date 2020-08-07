@@ -1,5 +1,7 @@
 # List of Nextflow errors
 
+[Error-finish](#Error-finish)
+
 ## Error-finish
 
 The workflow [error-finish.nf](https://github.com/nextflow-io/nextflow/blob/master/tests/error-finish.nf) fails on purpose. But TESK fails in a way that it should not.
