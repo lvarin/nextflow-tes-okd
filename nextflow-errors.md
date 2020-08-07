@@ -38,3 +38,17 @@ AttributeError: 'NoneType' object has no attribute 'reason'
 
 ```
 
+## ampa
+
+The workflow [ampa.nf](https://github.com/nextflow-io/nextflow/blob/master/tests/ampa.nf):
+```
+/usr/local/bin/nextflow run /tmp/nf/ampa.nf -with-docker centos -w /mnt
+```
+
+fails with the error:
+
+```
+N E X T F L O W  ~  version 20.06.0-edge
+Launching `/tmp/nf/ampa.nf` [pensive_golick] - revision: 23c6a3c5b3
+ERROR: TES executor does not allow the use of custom scripts in the `bin` folder
+```
