@@ -3,6 +3,7 @@
 * [Error-finish](#Error-finish)
 * [ampa](#ampa)
 * [complex-names](#complex-names)
+* [complex-names-dsl2](#complex-names-dsl2)
 
 ## Error-finish
 
@@ -100,4 +101,19 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/shutil.py", line 96, in copyfile
     with open(src, 'rb') as fsrc:
 IOError: [Errno 21] Is a directory: u'/work/.alpha'
+```
+
+## complex-names-dls2
+
+The workflow [complex-names-dls2.nf](https://github.com/nextflow-io/nextflow/blob/master/tests/complex-names-dsl2.nf):
+```
+/usr/local/bin/nextflow run /tmp/nf/complex-names-dsl2.nf -with-docker centos -w /mnt
+```
+
+Gives the error:
+```
+N E X T F L O W  ~  version 20.06.0-edge
+Launching `/tmp/nf/complex-names-dsl2.nf` [thirsty_wescoff] - revision: e1b4809964
+context=null
+Invalid DSL2 mode=enable
 ```
