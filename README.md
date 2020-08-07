@@ -1,6 +1,6 @@
 # How to test nextflow
 
 ```bash
-/usr/local/bin/nextflow run tutorial.nf -with-docker centos -w /mnt
+/usr/local/bin/nextflow run /tmp/nf/tutorial.nf -with-docker centos -w /mnt
+/usr/local/bin/nextflow run /tmp/nf/memory-tutorial.nf -with-docker centos -w /mnt
 ```
-
