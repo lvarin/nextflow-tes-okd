@@ -1,7 +1,7 @@
 # List of Nextflow errors
 
-[Error-finish](#Error-finish)
-[ampa](#ampa)
+* [Error-finish](#Error-finish)
+* [ampa](#ampa)
 
 ## Error-finish
 
