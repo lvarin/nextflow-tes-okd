@@ -9,7 +9,7 @@ COPY nextflow-fork/tests/ /tmp/nf/
 
 RUN rm -f /tmp/nf/bin/*
 
-COPY nextflow-fork/build/releases/nextflow-20.07.1-all /usr/local/bin/nextflow
+COPY nextflow-bin /usr/local/bin/nextflow
 COPY test.sh /usr/local/bin/nf_test
 
 ENV NXF_MODE ga4gh
