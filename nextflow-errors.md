@@ -18,7 +18,7 @@ The command to run it is:
 One of the tasks fails like this:
 
 ```
-$ oc logs task-4ddbf1ab-jbgsd                  
+$ oc logs task-4ddbf1ab-jbgsd
 Traceback (most recent call last):
   File "/usr/lib/python3.7/site-packages/tesk_core/job.py", line 39, in get_status
     if job.status.conditions[0].type == 'Complete' and job.status.conditions[0].status:
@@ -61,6 +61,14 @@ ERROR: TES executor does not allow the use of custom scripts in the `bin` folder
 The error comes from here:
 
 <https://github.com/nextflow-io/nextflow/blob/master/modules/nf-ga4gh/src/main/nextflow/ga4gh/tes/executor/TesExecutor.groovy#L50>
+
+### Fixed
+
+This was fixed by deleting the `bin` directory:
+
+```Dockerfile
++RUN rm -f /tmp/nf/bin/*
+```
 
 ## complex-names
 
