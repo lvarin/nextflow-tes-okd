@@ -7,7 +7,7 @@ RUN chmod g+w -R /.nextflow && \
 COPY nf/ /tmp/nf/
 COPY nextflow-fork/tests/ /tmp/nf/
 
-COPY nextflow-fork/build/releases/nextflow-20.07.0-SNAPSHOT-all /usr/local/bin/nextflow
+COPY nextflow-fork/build/releases/nextflow-20.07.1-all /usr/local/bin/nextflow
 COPY test.sh /usr/local/bin/nf_test
 
 ENV NXF_MODE ga4gh
