@@ -16,7 +16,7 @@ nextflow-bin: nextflow-fork/build/releases/
 	cp $(shell find nextflow-fork/build/releases/ -type f) nextflow-bin
 
 nextflow-fork/build/releases/: nexflow-fork/Makefile
-	cd nextflow-fork && make packGA4GH
+	cd nextflow-fork && make && make packGA4GH
 
 nexflow-fork/Makefile:
 	git submodule update --init --recursive

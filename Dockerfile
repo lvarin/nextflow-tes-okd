@@ -1,8 +1,8 @@
-FROM nextflow/nextflow:20.05.0-edge
+FROM nextflow/nextflow:21.01.0-edge
 
 RUN chmod g+w -R /.nextflow && \
     apk update && \
-    apk add git rsync make ncurses
+    apk add git rsync make ncurses openjdk8
 
 COPY nf/ /tmp/nf/
 COPY nextflow-fork/tests/ /tmp/nf/
