@@ -1,4 +1,4 @@
-version ?= patch
+version ?= $(shell date +%Y%m%d-%H%M)
 image_name=lvarin/nextflow-tes-okd
 
 all: build_image deploy_image
