@@ -19,8 +19,8 @@ nextflow-fork/build/releases/: nexflow-fork/Makefile
 	cd nextflow-fork && make && make packGA4GH
 
 nexflow-fork/Makefile:
-	git submodule update --init --recursive
-
+	#git submodule update --init --recursive
+	 git submodule update --recursive --remote
 
 deploy_image:
 	docker push ${image_name}:${version}
